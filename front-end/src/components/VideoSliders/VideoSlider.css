@@ -1,0 +1,137 @@
+/*Ajuste del contenedor del carrousel*/
+.containerSliders .react-multi-carousel-list{
+  /* display: flex;
+  align-items: center; */
+  padding: 30px 10px 30px 10px;
+  margin-right: 30px;
+}
+
+/*Scala del item cuando se posa el mouse encima*/
+.containerSliders .react-multi-carousel-list li:hover {
+  scale: 1.2;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+} 
+
+
+.containerSliders .videoSliderContainer {
+  position: relative;
+  &:hover {
+    z-index: 1;
+  }
+  .videoSliderItem {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    margin-right: 10px;
+    gap: 10px;
+    &:hover {
+      z-index: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* .carousel-item {
+  transition: transform 0.5s ease-in-out !important;
+} */
+
+.contenidoVideo{
+  position: absolute;
+  color: #fff;
+  height: 100%;
+  width: 90%;
+}
+
+.videoSliderImagen{
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contenidoVideo h2 {
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+  /* background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.5)); */
+  color: #fff;
+  font-size: 45px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.contenidoVideo p{
+  font-size: 22px;
+  color: #999;
+  margin-top: 20px;
+  padding: 0px 50px;
+  color: #fff;
+  line-height: 32px;
+}
+
+.contenidoVideo p a {
+  color: red;
+  font-weight: 700;
+}
+
+
+.containerSliders{
+  padding: 20px 0;
+} 
+
+.videoSliderImagenContainer::before {
+  content: ""; /* Crea un pseudo-elemento antes del contenido real */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Ancho de la sombra, puedes ajustarlo según tus necesidades */
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Degradado de negro a transparente */
+  z-index: -1; /* Coloca el pseudo-elemento detrás de la imagen */
+}
+
+@media (max-width: 778px) {
+  .contenidoVideo h2{
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .contenidoVideo p{
+    font-size: 10px;
+    line-height: 13px;
+    padding: 0 0 0 20px;
+    margin: 0;
+  }
+
+  .contenidoVideoSmaller h2{
+    color: #fff;
+    font-size: 9px;
+    padding: 0 0 0 15px;
+  }
+
+  .contenidoVideoSmaller p{
+    color: #fff;
+    font-size: 9px;
+    line-height: 12px;
+    padding: 0 0 0 15px;
+    margin: 0;
+  }
+
+  .contenidoVideoSmaller a{
+    color: red;
+    text-transform: none;
+  }
+
+  .containerSliders .react-multi-carousel-list li:hover {
+    scale: 1;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+}
+
+
+
+

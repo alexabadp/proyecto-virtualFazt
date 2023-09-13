@@ -1,0 +1,23 @@
+.container-admision {
+    background-color: #2d2a26;
+    width: 100%;
+    padding-bottom: 107px;
+    width: 100%;
+    height: 800px;
+  }
+  
+  .main-admision-fblock {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #2d2a26;
+    width: 1440px;
+    height: 100%;
+    padding-top: 50px;
+  }
+  
+  .admision-button {
+    width: 200px;
+    align-items: center;
+  }
+  
