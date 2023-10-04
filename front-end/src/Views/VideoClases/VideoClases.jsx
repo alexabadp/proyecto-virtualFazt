@@ -33,7 +33,7 @@ function VideoClases() {
               padding: "50px 0 0 0 ",
             }}
           >
-            Conoce más del ciclo FREE
+            Conoce más cursos
           </Typography>
           <Box
             sx={{

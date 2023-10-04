@@ -1,12 +1,11 @@
 import { Box } from "@mui/material";
 
 import BannerLibrary from "../../Components/BannerLibrary/BannerLibrary";
-import SolucionarioFilter from "../../Components/SolucionarioFilter/SolucionarioFilter";
+import ProspectoFilters from "../../Components/ProspectoFilter/ProspectoFilter";
 import { useEffect, useState } from "react";
 import LibraryHeader from "../../Layouts/Header/LibraryHeader";
-// import ClavesFilters from "../../Components/ClavesFilters/ClavesFilter";
 
-const Solucionarios = () => {
+const Prospectos = () => {
   const url = useState(window.location.href);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,12 +14,12 @@ const Solucionarios = () => {
     <>
       <LibraryHeader />
       <Box sx={{ background: "#262626", minHeight: "calc(100vh - 300px)" }}>
-      {/* <Box sx={{ background: "#f3f3f3", minHeight: "calc(100vh - 300px)" }}> */}
         <BannerLibrary />
-        <SolucionarioFilter />
+
+        <ProspectoFilters />
       </Box>
     </>
   );
 };
 
-export default Solucionarios;
+export default Prospectos;

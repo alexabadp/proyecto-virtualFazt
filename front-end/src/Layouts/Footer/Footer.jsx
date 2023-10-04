@@ -24,6 +24,8 @@ import ListaDesplegable from "./ListaDesplegable";
 import { useState } from "react";
 import ListaDesplegableBiblioteca from "./ListaDesplegableBiblioteca";
 
+import logoAcademia from '../../assets/logoFooterAcademia.png'
+
 function Footer() {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -59,23 +61,23 @@ function Footer() {
           spacing={2}
           sx={{
             display: { xs: "none", sm: "inline-flex" },
-            justifyContent: "space-around",
+            justifyContent: "space-around"
           }}
         >
           <Grid item lg={3} md={6}>
             <Box maxWidth="200px" maxHeight="80px">
-              <img
+              {/* <img
                 width="100%"
                 height="100%"
-                src="https://firebasestorage.googleapis.com/v0/b/grupo-ciencias.appspot.com/o/Landing%20GC%2FInicio%2FFooter%2Fwebp%2Ffooter-logo.webp?alt=media&token=1f9de167-138a-4b84-92ea-3ff2260d538a"
-                alt=""
-              />
+                // src={logoAcademia}
+                alt=""        
+              /> */}
             </Box>
             <Typography
               component="h6"
               sx={{ padding: { xs: "25px 0 10px 0" } }}
             >
-              Educación sin límites
+              Nuestras redes sociales
             </Typography>
             <Box
               sx={{
@@ -86,8 +88,8 @@ function Footer() {
               }}
             >
               <a
-                target="_blanck"
-                href="https://api.whatsapp.com/send?phone=+51 933 883 733&amp;text=Hola&nbsp;vengo&nbsp;de&nbsp;la&nbsp;web&nbsp;y&nbsp;tengo&nbsp;una&nbsp;consulta&nbsp;"
+                target=""
+                href=""
               >
                 <Typography
                   sx={{
@@ -107,8 +109,8 @@ function Footer() {
               </a>
               <Box
                 type="button"
-                onClick={handleClick}
-                target="_blank"
+                // onClick={handleClick}
+                target=""
                 rel="noreferrer"
               >
                 <Typography
@@ -132,7 +134,7 @@ function Footer() {
                 id={id}
                 open={open}
                 anchorEl={anchorEl}
-                onClose={handleClose}
+                // onClose={handleClose}
                 anchorOrigin={{
                   vertical: "bottom",
                   horizontal: "left",
@@ -180,7 +182,7 @@ function Footer() {
                 </Typography>
               </Popover>
               <a
-                href="https://www.instagram.com/cienciasgrupo/"
+                href=""
                 target="_blank"
                 rel="noreferrer"
               >
@@ -217,7 +219,7 @@ function Footer() {
                 }}
               >
                 <a
-                  href="https://www.facebook.com/GCiencias"
+                  href=""
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -238,7 +240,7 @@ function Footer() {
                 </a>
               </Box>
               <a
-                href="https://www.tiktok.com/@grupociencias"
+                href=""
                 target="_blank"
                 rel="noreferrer"
               >
@@ -260,17 +262,6 @@ function Footer() {
               </a>
             </Box>
           </Grid>
-          {/* <Grid item lg={3} sx={{ display: { xs: "none", lg: "inline-flex" } }}>
-            <Box maxWidth="260px">
-              <Typography fontSize="24px">Universidades</Typography>
-              <Typography fontSize="17px" sx={{ paddingTop: { xs: "25px" } }}>
-                Universidad Nacional de Ingeniería (UNI)
-              </Typography>
-              <Typography fontSize="17px" sx={{ paddingTop: { xs: "25px" } }}>
-                Universidad Nacional Mayor de San Marcos (UNMSM)
-              </Typography>
-            </Box>
-          </Grid> */}
           <Grid
             item
             xl={3}
@@ -282,7 +273,7 @@ function Footer() {
             </Typography>
             <Typography
               component={Link}
-              to="/videoClases"
+              // to="/videoClases"
               sx={{
                 fontSize: { xs: "17px" },
                 paddingTop: { xs: "25px" },
@@ -296,7 +287,7 @@ function Footer() {
             </Typography>
             <Typography
               component={Link}
-              to="/materiales"
+              // to="/materiales"
               sx={{
                 fontSize: { xs: "17px" },
                 padding: { xs: "15px 0" },
@@ -310,7 +301,7 @@ function Footer() {
             </Typography>
             <Typography
               component={Link}
-              to="/admision"
+              // to="/admision"
               sx={{
                 fontSize: { xs: "17px" },
                 textAlign: "left",
@@ -329,7 +320,7 @@ function Footer() {
             <ul style={{ textAlign: "left" }}>
               <li>
                 <AiFillMail style={{ marginRight: "10px" }} />
-                informes@grupociencias.edu.pe
+                informes@academia.edu.pe
               </li>
               <li style={{ whiteSpace: "nowrap" }}>
                 <FaTelegramPlane style={{ marginRight: "10px" }} />
@@ -358,60 +349,16 @@ function Footer() {
               }}
             >
               <div className="copy col-lg-6" style={{ marginTop: "0px" }}>
-                Copyright © 2022. EXAFRAME S.A ® Marca registrada.
+                Copyright © 2022. VIRTUALFAST COMPANY S.A ® Marca registrada.
               </div>
-              <div
-                className="claim col-lg-3 claim-book"
-                style={{ marginTop: "0px", display: "flex" }}
-              >
-                <Link
-                  to="/libroreclamaciones"
-                  style={{
-                    textDecoration: "none",
-                    fontSize: "18px",
-                    color: "#0d6efd",
-                  }}
-                >
-                  Libro de reclamos
-                </Link>
-                <FaBookOpen
-                  color="white"
-                  size={"1.5em"}
-                  style={{
-                    marginLeft: "20px",
-                  }}
-                />
-              </div>
-              <div
-                className="claim col-lg-3 data-protect"
-                style={{ marginTop: "0px" }}
-              >
-                <Link
-                  to="/politicaproteccion"
-                  style={{
-                    textDecoration: " none",
-                    fontSize: "18px",
-                    color: "#0d6efd",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  Protección de Datos Personales
-                </Link>
-              </div>
+            
             </Box>
           </Grid>
         </Grid>
       </Container>
 
       <Grid container sx={{ display: { xs: "block", sm: "none" } }}>
-        {/* <ListaDesplegable
-          elemento={"Universidades"}
-          opciones={[
-            "Universidad Nacional de Ingeniería (UNIas)",
-            "Universidad Nacional Mayor de San Marcos (UNMSM)",
-          ]}
-        /> */}
+
         <ListaDesplegableBiblioteca
           elemento={"Biblioteca"}
           opciones={[
@@ -437,7 +384,8 @@ function Footer() {
           <img
             width="100%"
             height="100%"
-            src="https://firebasestorage.googleapis.com/v0/b/grupo-ciencias.appspot.com/o/Landing%20GC%2FInicio%2FFooter%2Fwebp%2Ffooter-logo.webp?alt=media&token=1f9de167-138a-4b84-92ea-3ff2260d538a"
+            // src="https://firebasestorage.googleapis.com/v0/b/grupo-ciencias.appspot.com/o/Landing%20GC%2FInicio%2FFooter%2Fwebp%2Ffooter-logo.webp?alt=media&token=1f9de167-138a-4b84-92ea-3ff2260d538a"
+            // src={logoAcademia}
             alt=""
           />
         </Box>
@@ -452,8 +400,9 @@ function Footer() {
           }}
         >
           <a
-            target="_blanck"
-            href="https://api.whatsapp.com/send?phone=+51 933 883 733&amp;text=Hola&nbsp;vengo&nbsp;de&nbsp;la&nbsp;web&nbsp;y&nbsp;tengo&nbsp;una&nbsp;consulta&nbsp;"
+            href=""
+            target=""
+            // href="https://api.whatsapp.com/send?phone=+51 933 883 733&amp;text=Hola&nbsp;vengo&nbsp;de&nbsp;la&nbsp;web&nbsp;y&nbsp;tengo&nbsp;una&nbsp;consulta&nbsp;"
           >
             <Typography
               sx={{
@@ -473,8 +422,8 @@ function Footer() {
           </a>
           <Box
             type="button"
-            onClick={handleClick}
-            target="_blank"
+            // onClick={handleClick}
+            target=""
             rel="noreferrer"
           >
             <Typography
@@ -497,7 +446,7 @@ function Footer() {
             id={id}
             open={open}
             anchorEl={anchorEl}
-            onClose={handleClose}
+            // onClose={handleClose}
             anchorOrigin={{
               vertical: "bottom",
               horizontal: "left",
@@ -506,8 +455,8 @@ function Footer() {
           >
             <Typography sx={{ p: 1, display: "flex", gap: "10px" }}>
               <a
-                href="https://www.youtube.com/@GrupoCienciasUNI"
-                target="_blank"
+                href=""
+                target=""
                 rel="noreferrer"
               >
                 <Button
@@ -525,8 +474,8 @@ function Footer() {
                 </Button>
               </a>
               <a
-                href="https://www.youtube.com/c/GrupoCienciasSanMarcos"
-                target="_blank"
+                href=""
+                target=""
                 rel="noreferrer"
               >
                 <Button
@@ -545,8 +494,8 @@ function Footer() {
             </Typography>
           </Popover>
           <a
-            href="https://www.instagram.com/cienciasgrupo/"
-            target="_blank"
+            href=""
+            target=""
             rel="noreferrer"
           >
             <Typography
@@ -583,8 +532,8 @@ function Footer() {
             }}
           >
             <a
-              href="https://www.facebook.com/GCiencias"
-              target="_blank"
+              href=""
+              target=""
               rel="noreferrer"
             >
               <Typography
@@ -603,8 +552,8 @@ function Footer() {
             </a>
           </Box>
           <a
-            href="https://www.tiktok.com/@grupociencias"
-            target="_blank"
+            href=""
+            target=""
             rel="noreferrer"
           >
             <Typography
@@ -625,39 +574,9 @@ function Footer() {
           </a>
         </Box>
 
-        <Box padding="30px" textAlign="center">
-          <FaBookOpen
-            color="white"
-            size={"1.5em"}
-            style={{ marginRight: "20px" }}
-          />
-          <Typography
-            component={Link}
-            to="/libroreclamaciones"
-            sx={{
-              color: "rgba(0, 128, 255, 1)",
-              fontSize: "20px",
-              "&:hover": { color: "red" },
-            }}
-          >
-            Libro de reclamos
-          </Typography>
-        </Box>
-        <Box textAlign="center">
-          <Typography
-            component={Link}
-            to="/politicaproteccion"
-            sx={{
-              color: "rgba(0, 128, 255, 1)",
-              fontSize: "20px",
-              "&:hover": { color: "red" },
-            }}
-          >
-            Protección de Datos Personales
-          </Typography>
-        </Box>
+
         <Typography textAlign="center" fontSize="18px" padding="30px">
-          Copyright © 2022. EXAFRAME S.A ® Marca registrada.
+          Copyright © 2022. ROSETT COMPANY S.A ® Marca registrada.
         </Typography>
       </Grid>
     </Box>

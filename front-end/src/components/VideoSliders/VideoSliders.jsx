@@ -24,7 +24,7 @@ const VideoSliders = () => {
   const [imageVisible, setImageVisible] = useState(null);
 
   //* PAGINACION
-  const itemsPerPage = 6;
+  const itemsPerPage = 4;
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(cursos.length / itemsPerPage);
   const startIndex = (page - 1) * itemsPerPage;

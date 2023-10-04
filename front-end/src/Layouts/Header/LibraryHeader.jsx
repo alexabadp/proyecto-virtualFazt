@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ConnectedTvIcon from "@mui/icons-material/ConnectedTv";
 
 import biblioteca from "../../assets/biblioteca-free.png";
+import imageHeader from "../../assets/ImageLogin.png"
 
 function LibraryHeader() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -105,16 +106,17 @@ function LibraryHeader() {
             component={Link}
             to="/videoclases"
             color="inherit"
-            sx={{ width: { xs: "200px", lg: "400px" } }}
+            sx={{ width: { xs: "200px", lg: "400px" }, fontSize:'30px', textTransform: 'none' }}
           >
-            <img
+            {/* <img
               // className="logoBibliotecaFree"
               width="100%"
               // height="40px"
               // src="https://firebasestorage.googleapis.com/v0/b/grupo-ciencias.appspot.com/o/Landing%20GC%2FInicio%2FHeader%2Fwebp%2Flogo-small.webp?alt=media&token=9b00a52e-4f75-40d2-aa34-35ba358bf35c"
               src={biblioteca}
               alt=""
-            />
+            /> */}
+            Virtual<strong>Fast</strong>
           </Button>
 
           <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>

@@ -4,14 +4,8 @@ import ReactPlayer from "react-player";
 const BannerLibrary = () => {
   return (
     <Box sx={{ marginTop: "64px", height: "calc(100vh - 140px)" }}>
-      <ReactPlayer
-        url="https://youtu.be/UZ1xi5HJP6c"
-        className="react-player"
-        width="100%"
-        height="100%"
-        controls={true}
-        muted={true}
-      />
+      <img width="100%" height="100%" src="https://estudiante.ujcm.edu.pe/wp-content/uploads/2021/10/biblioteca-virtual-3.jpg" alt="" />
+
     </Box>
   );
 };

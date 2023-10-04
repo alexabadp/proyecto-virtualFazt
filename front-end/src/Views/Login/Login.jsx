@@ -14,7 +14,6 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 import ImageLogin from "../../assets/ImageLogin.png";
-import ImageBg from '../../assets/bg.jpeg'
 import { Link } from "react-router-dom";
 
 const Login = () => {
