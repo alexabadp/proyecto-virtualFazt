@@ -29,4 +29,10 @@ const loginUser = async ({ email, password }) => {
   }
 };
 
-module.exports = { signupUserDb, loginUser };
+const getUsersDB = async () =>{
+  const users = await User.findAll()
+
+  return users
+}
+
+module.exports = { signupUserDb, loginUser, getUsersDB };

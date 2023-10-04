@@ -3,7 +3,7 @@ import Login from "./Views/Login/Login";
 import Signup from "./Views/Signup/Signup";
 import Dashboard from "./Views/Dashboard/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
-import VistaTest from "./Views/VistaTest/VistaTest";
+// import VistaTest from "./Views/VistaTest/VistaTest";
 import VideoClases from "./Views/VideoClases/VideoClases";
 import Admision from "./Views/Admision/Admision";
 import Solucionarios from "./Views/Solucionarios/Solucionarios";
@@ -17,7 +17,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/" element={<ProtectedRoute />}>
         <Route index element={<VideoClases />} />
-        <Route path="/vistatest" element={<VistaTest />} />
+        <Route path="/admin" element={<Dashboard />} />
         <Route path="/videoclases" element={<VideoClases />} />
         <Route path="/admision" element={<Admision />} />
         <Route path="/solucionarios" element={<Solucionarios />} />
