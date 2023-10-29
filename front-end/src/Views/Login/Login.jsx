@@ -48,7 +48,7 @@ const Login = () => {
         .post("http://localhost:3001/user/login", data)
         .then((response) => {
           localStorage.setItem("authentication", JSON.stringify(response.data));
-          window.location.href = "/";
+          window.location.href = "/videoclases";
         })
         .catch((error) => {
           console.error(error);

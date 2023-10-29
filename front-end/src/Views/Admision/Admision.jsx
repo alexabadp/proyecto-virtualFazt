@@ -41,7 +41,7 @@ function Admision() {
             </Grid>
           </Grid>
         </Container>
-        <Footer/>
+        {/* <Footer/> */}
       </Box>
     </>
   );

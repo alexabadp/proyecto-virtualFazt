@@ -1,6 +1,7 @@
-import { SET_AUTHENTICATION } from "./actions";
+import { GET_CICLOS, SET_AUTHENTICATION } from "./actions";
 
 const initialState = {
+  ciclos: [],
   authentication: false,
 };
 
@@ -11,6 +12,13 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         authentication: action.payload,
       };
+
+    case GET_CICLOS:
+      return {
+        ...state,
+        ciclos: action.payload
+      };
+
     default:
       return {
         ...state,

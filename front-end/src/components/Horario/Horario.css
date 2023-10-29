@@ -1,0 +1,40 @@
+.my-schedule-modal .modal-body {
+    /* height: 1035px; */
+    background-color: white;
+    border-radius: 0px 0px 7px 7px;
+    /* padding: 0px 90px 0px 90px; */
+  }
+  
+  .my-schedule-modal .modal-header {
+    background-color: white;
+    border-bottom: 0px;
+  }
+  
+  .my-schedule-modal .modal-body .img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  .img-responsive {
+    margin: 0 auto;
+  }
+  
+  .image-arrows {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .centered {
+    display: inline-block;
+    width: 15%;
+    margin: 0 auto;
+  }
+  
+  
+  

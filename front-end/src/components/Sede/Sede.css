@@ -1,0 +1,176 @@
+@media (min-width: 280px) and (max-width: 540px) {
+    .sede-card {
+      margin-bottom: 60px;
+    }
+  
+    .sede {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: left;
+    }
+  
+    .image-sede {
+      display: none;
+    }
+  
+    .sede-content {
+      font-weight: 400;
+      font-size: 14px !important;
+      line-height: 16px;
+    }
+  
+    .copy-tag {
+      /* font-family: "Marlin Geo"; */
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px !important;
+      line-height: 16px;
+      margin-left: -40px;
+    }
+  
+    /* .sede-card .img,
+    svg { */
+    .sede-card .img {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 0px !important;
+      background-color: #e70031 !important;
+      font-size: 2.5rem;
+    }
+  
+    .sede-row {
+      width: 358px !important;
+    }
+  }
+  @media (min-width: 541px) and (max-width: 1439px) {
+    .sede-card {
+      margin-bottom: 60px;
+    }
+  
+    .sede {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  
+    .image-sede {
+      display: none;
+    }
+  
+    .sede-content {
+      font-weight: 400;
+      font-size: 14px !important;
+      line-height: 16px;
+    }
+  
+    .copy-tag {
+      /* font-family: "Marlin Geo"; */
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px !important;
+      line-height: 16px;
+      margin-left: -40px;
+    }
+  
+    /* .sede-card .img,
+    svg { */
+    .sede-card .img {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      margin-top: 0px !important;
+      background-color: #e70031 !important;
+      font-size: 2.5rem;
+    }
+  
+    .sede-row {
+      width: 358px !important;
+    }
+  }
+  @media (min-width: 1440px) {
+  }
+  
+  .sede-container {
+    margin-bottom: 20px;
+  }
+  
+  .sede-row {
+    width: 1440px;
+  }
+  
+  .sedes-title {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    color: #2d2a26;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .sede-card {
+    margin-top: 48px;
+    margin-bottom: 60px;
+  }
+  
+  .sede {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #2d2a26;
+    margin-bottom: 10px;
+  }
+  
+  .sede-content {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2d2a26;
+    margin-bottom: 10px;
+  }
+  
+  .image-sede {
+    margin-bottom: 30px;
+    margin-left: -90px;
+    margin-top: -25px;
+  }
+  
+  .copy-tag {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .icon-tag {
+    align-items: center;
+  }
+  
+  .sede-button {
+    margin-top: 10px;
+  }
+  
+  .sede-look {
+    border: 1.6px solid #e70031;
+    border-radius: 6px;
+    width: 101px;
+    height: 32px;
+    color: red;
+    font-weight: 600;
+    background-color: white;
+    line-height: 0px;
+  }
+  
+  .map-container {
+    width: 100%;
+    /* height: 829px; */
+    height: 100%;
+    padding: auto;
+  }
+  

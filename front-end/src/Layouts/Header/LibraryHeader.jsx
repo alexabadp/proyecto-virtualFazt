@@ -76,6 +76,15 @@ function LibraryHeader() {
                 sx={{ "&:hover": { backgroundColor: "red", color: "#fff" } }}
                 component={Link}
                 // to="/videoclases"
+                to="/inicio"
+                onClick={handleCloseNavMenu}
+              >
+                <Typography textAlign="center">Inicio</Typography>
+              </MenuItem>
+              <MenuItem
+                sx={{ "&:hover": { backgroundColor: "red", color: "#fff" } }}
+                component={Link}
+                // to="/videoclases"
                 to="videoclases"
                 onClick={handleCloseNavMenu}
               >
@@ -142,6 +151,20 @@ function LibraryHeader() {
                   Inicio
                 </Typography>
               </Button> */}
+              <Button
+                sx={{
+                  color: "#fff",
+                  "&:hover": { backgroundColor: "red", color: "#fff" },
+                }}
+                component={Link}
+                // to="/videoclases"
+                to="/inicio"
+                onClick={handleCloseNavMenu}
+              >
+                <Typography textTransform="none" textAlign="center">
+                  Inicio
+                </Typography>
+              </Button>
               <Button
                 sx={{
                   color: "#fff",

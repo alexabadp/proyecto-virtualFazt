@@ -1,0 +1,429 @@
+@media (min-width: 280px) and (max-width: 540px) {
+    .first-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .ciclo {
+      font-weight: 700 !important;
+      font-size: 12px !important;
+      line-height: 15px !important;
+      text-align: center;
+    }
+  
+    .verano {
+      font-weight: 800 !important;
+      font-size: 32px !important;
+      line-height: 40px !important;
+      text-align: center;
+    }
+  
+    .first-block p {
+      font-weight: 400 !important;
+      font-size: 15px !important;
+      line-height: 24px !important;
+      text-align: center;
+    }
+  
+    .enroll-div {
+      text-align: center;
+    }
+  
+    .about {
+      font-weight: 800 !important;
+      font-size: 24px !important;
+      line-height: 31px !important;
+      text-align: center !important;
+    }
+  
+    .ciclo-detail .subtitle {
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 700 !important;
+      font-size: 15px !important;
+      line-height: 19px !important;
+      color: #2d2a26 !important;
+    }
+  
+    .ciclo-detail .values {
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 15px !important;
+      line-height: 36px !important;
+      color: #2d2a26 !important;
+    }
+  
+    .duration {
+      margin-left: 5px !important;
+    }
+  
+    .duration-detail .subtitle {
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 700 !important;
+      font-size: 16px !important;
+      line-height: 21px !important;
+      color: #2d2a26 !important;
+    }
+  
+    .duration-detail .value {
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 14px !important;
+      line-height: 21px !important;
+      color: #2d2a26 !important;
+    }
+  
+    .ciclo-detail {
+      text-align: left;
+      margin-left: 15px;
+    }
+  
+    .notebook-div {
+      text-align: center;
+    }
+  
+    /* .fourth-block img,
+    svg { */
+    .fourth-block img {
+      width: 80%;
+      height: 80%;
+    }
+  
+    .uni3 {
+      display: none;
+    }
+  
+    .resume-info {
+      text-align: center !important;
+      justify-content: baseline !important;
+    }
+  
+    .resume-info p {
+      text-align: justify !important;
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 15px !important;
+      line-height: 24px !important;
+      color: #2d2a26 !important;
+    }
+  
+    .title-enjoy {
+      font-weight: 800 !important;
+      font-size: 24px !important;
+      line-height: 31px !important;
+    }
+  
+    .subtitle-enjoy {
+      font-weight: 400 !important;
+      font-size: 18px !important;
+      line-height: 28px !important;
+      width: 358px !important;
+    }
+  
+    .list-enjoy li {
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 400 !important;
+      font-size: 15px !important;
+      line-height: 20px !important;
+    }
+  
+    .title-university {
+      /* font-family: "Marlin Geo" !important; */
+      font-style: normal !important;
+      font-weight: 700 !important;
+      font-size: 16px !important;
+      line-height: 21px !important;
+      text-align: center !important;
+      color: #2d2a26 !important;
+    }
+  
+    .uni2 {
+      margin-top: 30px;
+    }
+  
+    .image-ciclo {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 541px) and (max-width: 1439px) {
+  }
+  
+  @media (min-width: 1440px) {
+    .landing-container .row {
+      margin-left: 0px;
+    }
+  }
+  
+  .enroll {
+    width: 237px;
+    height: 60px;
+    border-radius: 0px;
+    margin-bottom: 40px;
+  }
+  
+  .ciclo {
+    margin-top: 89px;
+    color: #e70031;
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 19px;
+  }
+  
+  .verano {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  
+  .first-block p {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .first-block .image-container {
+    background-color: #d8f0f8;
+    height: 489px;
+  }
+  
+  .remind-this {
+    margin-top: 54px;
+    width: 292px;
+    height: 211px;
+    background-color: white;
+    border-radius: 10%;
+    padding-top: 3px;
+    position: absolute;
+  }
+  
+  .remind-title {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 31px;
+  }
+  
+  .remind-this p {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    width: 250px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .remind-know {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #e70031;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .second-block {
+    margin-top: 90px;
+    margin-bottom: 80px;
+  }
+  
+  .ciclo-detail {
+    margin-bottom: 50px;
+  }
+  
+  .ciclo-detail .subtitle {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .ciclo-detail .values {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  
+  .about {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 46px;
+    color: #2d2a26;
+    margin-bottom: 20px;
+  }
+  
+  .resume {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  
+  .second-block p {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    width: 576px;
+  }
+  
+  .duration {
+    background: #f8faff;
+    border-radius: 25px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .landing-container .info {
+    align-items: center;
+  }
+  
+  .duration-detail .subtitle {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
+  
+  .duration-detail .value {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    margin-left: -55px;
+  }
+  
+  .third-block {
+    height: 219px;
+    background-color: #f8faff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .payment-method {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .payment-type {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(45, 42, 38, 0.75);
+  }
+  
+  .fourth-block {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .title-enjoy {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .subtitle-enjoy {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    width: 500px;
+    margin-top: 34px;
+  }
+  
+  .list-enjoy {
+    margin-top: 52px;
+  }
+  
+  .list-enjoy li {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .list-enjoy ul {
+    list-style: none;
+  }
+  
+  .list-enjoy ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .fifth-block {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .title-university {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .title-signnow {
+    /* font-family: "Marlin Geo"; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+  

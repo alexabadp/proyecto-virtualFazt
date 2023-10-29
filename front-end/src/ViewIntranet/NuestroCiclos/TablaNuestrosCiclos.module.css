@@ -1,0 +1,31 @@
+.dataTable {
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-top: 20px;
+  }
+  
+  .dataTable th, .dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* text-align: left; */
+    max-width: 100px;
+  }
+  
+  .dataTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .dataTable {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+  }
+  
+  .dataTable th, .dataTable td {
+    padding: 8px; /* Agrega espacio interno para el contenido */
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el desbordamiento del contenido */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) si el contenido se desborda */
+    max-width: 200px; /* Establece un ancho máximo para las celdas, ajusta según tus necesidades */
+    border: 1px solid #ddd; /* Agrega bordes a las celdas */
+  }
+  

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import AppBar from "@mui/material/AppBar";
@@ -13,9 +13,16 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Select } from "@mui/material";
 import ConnectedTvIcon from "@mui/icons-material/ConnectedTv";
+import { useDispatch, useSelector } from "react-redux";
+
+import logoAcademia from '../../assets/logoAcademia.png'
+import { getCiclos } from "../../redux/actions";
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const dispatch = useDispatch()
+  const dataCliclos = useSelector((state) => state.ciclos)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -24,6 +31,10 @@ function Header() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  useEffect(()=>{
+    dispatch(getCiclos());
+  },[dispatch])
 
   return (
     <AppBar color="inherit">
@@ -61,15 +72,15 @@ function Header() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              {/* <MenuItem
-                sx={{ "&:hover": { backgroundColor: "red", color: "#fff" } }}
+              <MenuItem
+                sx={{ "&:hover": { backgroundColor: "blue", color: "#fff" } }}
                 component={Link}
-                to="/"
+                to="/inicio"
                 onClick={handleCloseNavMenu}
               >
                 <Typography textAlign="center">Inicio</Typography>
-              </MenuItem> */}
-              {/* <Select
+              </MenuItem>
+              <Select
                 label="Nuestro Ciclos"
                 margin="dense"
                 defaultValue=""
@@ -78,9 +89,9 @@ function Header() {
                 sx={{
                   margin: "0px 20px",
                   fontWeight: "700",
-                  color: "red",
+                  color: "blue",
                   "& .MuiSelect-icon": {
-                    color: "red",
+                    color: "blue",
                   },
                 }}
               >
@@ -88,158 +99,40 @@ function Header() {
                   Nuestro Ciclos
                 </MenuItem>
 
-                <MenuItem
-                  key="option2"
+                {
+                  dataCliclos?.map((e)=> <MenuItem key={e.idUrl} 
                   sx={{
                     "&:hover": {
-                      backgroundColor: "red",
+                      backgroundColor: "blue",
                       color: "#fff",
                     },
                   }}
                   component={Link}
-                  to="/ciclos/veranosanmarcos"
+                  // to={`/ciclos/anualsanmarcos`}
+                  to={`/ciclos/${e.idUrl}`}
                   onClick={handleCloseNavMenu}
                 >
-                  Ciclo Verano San Marcos
-                </MenuItem>
-                <MenuItem
-                  key="option3"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/veranouni"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Verano UNI
-                </MenuItem>
-                <MenuItem
-                  key="option4"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/repasosanmarcos"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Repaso San Marcos
-                </MenuItem>
-                <MenuItem
-                  key="option5"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/repasouni"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Repaso UNI
-                </MenuItem>
-                <MenuItem
-                  key="option9"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/anualsanmarcos"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Anual San Marcos
-                </MenuItem>
-                <MenuItem
-                  key="option10"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/seminualsanmarcos"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Semianual San Marcos
-                </MenuItem>
-                <MenuItem
-                  key="option7"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/anualuni"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Anual UNI
-                </MenuItem>
-                <MenuItem
-                  key="option6"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/semestralsanmarcos"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Semestral San Marcos
-                </MenuItem>
-                <MenuItem
-                  key="option8"
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  component={Link}
-                  to="/ciclos/semestraluni"
-                  onClick={handleCloseNavMenu}
-                >
-                  Ciclo Semestral UNI
-                </MenuItem>
-              </Select> */}
-              {/* <MenuItem
-                sx={{ "&:hover": { backgroundColor: "red", color: "#fff" } }}
-                component={Link}
-                to="/videoClases"
-                onClick={handleCloseNavMenu}
-              >
-                <Typography textAlign="center">Biblioteca Free</Typography>
-              </MenuItem> */}
+                  {e.title}</MenuItem>)
+                }
+
+              </Select>
+
               <MenuItem
-                sx={{ "&:hover": { backgroundColor: "red", color: "#fff" } }}
+                sx={{ "&:hover": { backgroundColor: "blue", color: "#fff" } }}
                 component={Link}
-                // to="/contactus"
-                to="/"
+                to="/contactus"
                 onClick={handleCloseNavMenu}
               >
                 <Typography textAlign="center">Contáctanos</Typography>
               </MenuItem>
-              {/* <MenuItem
-                sx={{ "&:hover": { backgroundColor: "red", color: "#fff" } }}
+              <MenuItem
+                sx={{ "&:hover": { backgroundColor: "blue", color: "#fff" } }}
                 component={Link}
                 to="/sedes"
                 onClick={handleCloseNavMenu}
               >
                 <Typography textAlign="center">Sedes</Typography>
-              </MenuItem> */}
+              </MenuItem>
             </Menu>
           </Box>
 
@@ -249,14 +142,12 @@ function Header() {
             color="inherit"
             sx={{ height: { xs: "40px", md: "55px" } }}
           >
-            {/* <img
+            <img
               width="100%"
-              // height="40px"
               height="100%"
-              src="https://firebasestorage.googleapis.com/v0/b/grupo-ciencias.appspot.com/o/Landing%20GC%2FInicio%2FHeader%2Fwebp%2Flogo-small.webp?alt=media&token=9b00a52e-4f75-40d2-aa34-35ba358bf35c"
+              src={logoAcademia}
               alt=""
-            /> */}
-            ALMIRCOLAOS
+            />
           </Button>
 
           <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>
@@ -269,20 +160,20 @@ function Header() {
                 color: "#000",
               }}
             >
-              {/* <Button
+              <Button
                 sx={{
                   color: "#000",
-                  "&:hover": { backgroundColor: "red", color: "#fff" },
+                  "&:hover": { backgroundColor: "blue", color: "#fff" },
                 }}
                 component={Link}
-                to="/"
+                to="/inicio"
                 onClick={handleCloseNavMenu}
               >
                 <Typography textTransform="none" textAlign="center">
                   Inicio
                 </Typography>
-              </Button> */}
-              {/* <Select
+              </Button>
+              <Select
                 label="Nuestro Ciclos"
                 margin="dense"
                 defaultValue=""
@@ -290,9 +181,9 @@ function Header() {
                 variant="standard"
                 sx={{
                   fontWeight: "700",
-                  color: "red",
+                  color: "blue",
                   "& .MuiSelect-icon": {
-                    color: "red",
+                    color: "blue",
                   },
                 }}
               >
@@ -300,62 +191,27 @@ function Header() {
                   Nuestro Ciclos
                 </MenuItem>
 
-                <MenuItem
+                {
+                  dataCliclos?.map((e)=> <MenuItem 
+                  key={e.idUrl} 
                   sx={{
                     "&:hover": {
-                      backgroundColor: "red",
+                      backgroundColor: "blue",
                       color: "#fff",
                     },
                   }}
-                  key="option2"
                   component={Link}
-                  to="/ciclos/veranosanmarcos"
+                  // to={`/ciclos/anualsanmarcos`}
+                  to={`/ciclos/${e.idUrl}`}
+                  onClick={handleCloseNavMenu}
                 >
-                  Ciclo Verano San Marcos
-                </MenuItem>
-                <MenuItem
+                  {e.title}</MenuItem>)
+                }
+
+                {/* <MenuItem
                   sx={{
                     "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  key="option3"
-                  component={Link}
-                  to="/ciclos/veranouni"
-                >
-                  Ciclo Verano UNI
-                </MenuItem>
-                <MenuItem
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  key="option4"
-                  component={Link}
-                  to="/ciclos/repasosanmarcos"
-                >
-                  Ciclo Repaso San Marcos
-                </MenuItem>
-                <MenuItem
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  key="option5"
-                  component={Link}
-                  to="/ciclos/repasouni"
-                >
-                  Ciclo Repaso UNI
-                </MenuItem>
-                <MenuItem
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
+                      backgroundColor: "blue",
                       color: "#fff",
                     },
                   }}
@@ -368,20 +224,7 @@ function Header() {
                 <MenuItem
                   sx={{
                     "&:hover": {
-                      backgroundColor: "red",
-                      color: "#fff",
-                    },
-                  }}
-                  key="option10"
-                  component={Link}
-                  to="/ciclos/seminualsanmarcos"
-                >
-                  Ciclo Semianual San Marcos
-                </MenuItem>
-                <MenuItem
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "red",
+                      backgroundColor: "blue",
                       color: "#fff",
                     },
                   }}
@@ -394,7 +237,7 @@ function Header() {
                 <MenuItem
                   sx={{
                     "&:hover": {
-                      backgroundColor: "red",
+                      backgroundColor: "blue",
                       color: "#fff",
                     },
                   }}
@@ -407,7 +250,7 @@ function Header() {
                 <MenuItem
                   sx={{
                     "&:hover": {
-                      backgroundColor: "red",
+                      backgroundColor: "blue",
                       color: "#fff",
                     },
                   }}
@@ -416,41 +259,26 @@ function Header() {
                   to="/ciclos/semestraluni"
                 >
                   Ciclo Semestral UNI
-                </MenuItem>
-              </Select> */}
-
-              {/* <Button
-                sx={{
-                  color: "#000",
-                  "&:hover": { backgroundColor: "red", color: "#fff" },
-                }}
-                component={Link}
-                to="/videoClases"
-                onClick={handleCloseNavMenu}
-              >
-                <Typography textTransform="none" textAlign="center">
-                  Biblioteca Free
-                </Typography>
-              </Button> */}
+                </MenuItem> */}
+              </Select>
 
               <Button
                 sx={{
                   color: "#000",
-                  "&:hover": { backgroundColor: "red", color: "#fff" },
+                  "&:hover": { backgroundColor: "blue", color: "#fff" },
                 }}
                 component={Link}
-                // to="/contactus"
-                to="/"
+                to="/contactus"
                 onClick={handleCloseNavMenu}
               >
                 <Typography textTransform="none" textAlign="center">
                   Contáctanos
                 </Typography>
               </Button>
-              {/* <Button
+              <Button
                 sx={{
                   color: "#000",
-                  "&:hover": { backgroundColor: "red", color: "#fff" },
+                  "&:hover": { backgroundColor: "blue", color: "#fff" },
                 }}
                 component={Link}
                 to="/sedes"
@@ -459,25 +287,25 @@ function Header() {
                 <Typography textTransform="none" textAlign="center">
                   Sedes
                 </Typography>
-              </Button> */}
+              </Button>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
               <Button
                 sx={{
                   padding: { xs: "8px", md: "12px" },
-                  backgroundColor: "rgba(255,0,0,0.85)",
+                  backgroundColor: "blue",
                   color: "rgba(255,255,255,0.85)",
                   "&:hover": {
-                    backgroundColor: "red",
+                    backgroundColor: "blue",
                     color: "white",
                   },
                 }}
-                onClick={() => {
-                  localStorage.removeItem("authentication");
-                  window.location.href = "/";
-                }}
+                component={Link}
+                to="/"
+                onClick={handleCloseNavMenu}
               >
+                <ConnectedTvIcon color="inherit" />
                 <Typography
                   sx={{
                     textTransform: "none",
@@ -485,7 +313,7 @@ function Header() {
                     fontSize: { xs: "16px", md: "18px" },
                   }}
                 >
-                  Cerrar sesion
+                  Biblioteca
                 </Typography>
               </Button>
             </Box>
