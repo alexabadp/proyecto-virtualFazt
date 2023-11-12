@@ -10,6 +10,7 @@ const signupUserDb = async ({ name, email, password }) => {
       name,
       email,
       password,
+      estado: true
     });
     return newUser;
   } else {
@@ -35,4 +36,39 @@ const getUsersDB = async () =>{
   return users
 }
 
-module.exports = { signupUserDb, loginUser, getUsersDB };
+const postUpdateUser = async ({ id, name, email, password}) => {
+  const existingUser = await User.findOne({
+    where: {id: id}
+  });
+
+  if (existingUser) {
+    await existingUser.update({
+      name,
+      email,
+      password
+    })
+
+    return "Usuario actualizado con éxito"
+  } else {
+    return "El usuario no existe"
+  }
+}
+
+const postDeleteUser = async ({id}) => {
+  console.log("logica para eliminar", id)
+  const existingUser = await User.findOne({
+    where: {id: id}
+  })
+
+  if(existingUser) {
+    await existingUser.update({
+      estado: !existingUser.estado
+    })
+
+    return "Usuario eliminado con éxito"
+  } else {
+    return "El usuario no existe" 
+  }
+}
+
+module.exports = { signupUserDb, loginUser, getUsersDB, postUpdateUser, postDeleteUser };

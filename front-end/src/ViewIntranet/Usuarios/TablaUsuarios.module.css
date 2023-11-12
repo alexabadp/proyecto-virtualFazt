@@ -1,0 +1,56 @@
+.dataTable th, .dataTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width: 100px;
+}
+
+.dataTable th {
+  background-color: #f2f2f2;
+}
+
+.dataTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.dataTable th, .dataTable td {
+  padding: 8px;
+  white-space: nowrap;
+  max-width: 200px; 
+  border: 1px solid #ddd;
+}
+
+.dataTable td {
+  overflow-x: auto;
+}
+
+td::-webkit-scrollbar {
+  height: 10px;
+}
+
+td::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b; 
+  border-radius: 6px;
+}
+
+td::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+td::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.lastCell {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width: 100px;
+  padding: 8px;
+  white-space: nowrap;
+  max-width: 200px; 
+  border: 1px solid #ddd;
+}

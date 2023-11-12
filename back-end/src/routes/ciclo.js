@@ -1,10 +1,12 @@
 const { Router } = require("express")
-const { postHandleCiclo } = require('../handlers/postHandler');
+const { postHandleCiclo, postHandleUpdateCiclo, postHandleDeleteCiclo } = require('../handlers/postHandler');
 const { getHandleCiclos } = require("../handlers/getHandler");
 
 const router = Router();
 
-router.post("/postCiclo", postHandleCiclo)
 router.get("/getCiclos", getHandleCiclos)
+router.post("/postCiclo", postHandleCiclo)
+router.post("/postUpdateCiclo", postHandleUpdateCiclo)
+router.post("/postDeleteCiclo", postHandleDeleteCiclo)
 
 module.exports = router

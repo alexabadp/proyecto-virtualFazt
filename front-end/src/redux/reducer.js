@@ -1,7 +1,9 @@
-import { GET_CICLOS, SET_AUTHENTICATION } from "./actions";
+import { GET_CICLOS, SET_AUTHENTICATION, GET_USUARIOS, GET_SEDES } from "./actions";
 
 const initialState = {
   ciclos: [],
+  usuarios: [],
+  sedes:[],
   authentication: false,
 };
 
@@ -17,6 +19,18 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         ciclos: action.payload
+      };
+    
+    case GET_USUARIOS:
+      return {
+        ...state,
+        usuarios: action.payload
+      };
+
+    case GET_SEDES:
+      return {
+        ...state,
+        sedes: action.payload
       };
 
     default:

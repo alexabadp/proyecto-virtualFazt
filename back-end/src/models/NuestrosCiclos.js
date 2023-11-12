@@ -1,4 +1,4 @@
-const { DataTypes } = require("sequelize");
+const { DataTypes, BOOLEAN } = require("sequelize");
 
 module.exports = (sequelize) => {
   sequelize.define(
@@ -40,6 +40,9 @@ module.exports = (sequelize) => {
       temario: {
         type: DataTypes.STRING,
         allowNull: false,
+      },
+      estado:{
+        type: BOOLEAN,
       }
     },
     {
