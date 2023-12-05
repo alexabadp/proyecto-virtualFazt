@@ -43,6 +43,7 @@ function Admision() {
         </Container>
         {/* <Footer/> */}
       </Box>
+      <Footer/>
     </>
   );
 }

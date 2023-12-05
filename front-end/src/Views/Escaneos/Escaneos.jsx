@@ -5,6 +5,7 @@ import EscaneoFilters from "../../Components/EscaneoFilters/EscaneoFilters";
 import { useEffect, useState } from "react";
 // import ClavesFilters from "../../Components/ClavesFilters/ClavesFilter";
 import LibraryHeader from "../../Layouts/Header/LibraryHeader";
+import Footer from "../../Layouts/Footer/Footer";
 
 const Escaneos = () => {
   const url = useState(window.location.href);
@@ -22,6 +23,7 @@ const Escaneos = () => {
 
         {/* <ClavesFilters /> */}
       </Box>
+      <Footer />
     </>
   );
 };

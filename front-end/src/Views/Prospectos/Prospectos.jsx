@@ -4,6 +4,7 @@ import BannerLibrary from "../../Components/BannerLibrary/BannerLibrary";
 import ProspectoFilters from "../../Components/ProspectoFilter/ProspectoFilter";
 import { useEffect, useState } from "react";
 import LibraryHeader from "../../Layouts/Header/LibraryHeader";
+import Footer from "../../Layouts/Footer/Footer";
 
 const Prospectos = () => {
   const url = useState(window.location.href);
@@ -18,6 +19,7 @@ const Prospectos = () => {
 
         <ProspectoFilters />
       </Box>
+      <Footer />
     </>
   );
 };

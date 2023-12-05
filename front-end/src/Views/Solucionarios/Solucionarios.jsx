@@ -4,6 +4,7 @@ import BannerLibrary from "../../Components/BannerLibrary/BannerLibrary";
 import SolucionarioFilter from "../../Components/SolucionarioFilter/SolucionarioFilter";
 import { useEffect, useState } from "react";
 import LibraryHeader from "../../Layouts/Header/LibraryHeader";
+import Footer from "../../Layouts/Footer/Footer";
 // import ClavesFilters from "../../Components/ClavesFilters/ClavesFilter";
 
 const Solucionarios = () => {
@@ -19,6 +20,7 @@ const Solucionarios = () => {
         <BannerLibrary />
         <SolucionarioFilter />
       </Box>
+      <Footer />
     </>
   );
 };

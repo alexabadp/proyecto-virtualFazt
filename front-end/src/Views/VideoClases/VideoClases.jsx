@@ -8,6 +8,7 @@ import VideoSliders from "../../Components/VideoSliders/VideoSliders";
 import { useEffect, useState } from "react";
 import Header from "../../Layouts/Header/Header";
 import LibraryHeader from "../../Layouts/Header/LibraryHeader";
+import Footer from "../../Layouts/Footer/Footer";
 // import LibraryHeader from "../../Layouts/Header/LibraryHeader";
 
 function VideoClases() {
@@ -45,6 +46,7 @@ function VideoClases() {
           <VideoSliders />
         </Container>
       </Box>
+      <Footer/>
     </>
   );
 }
